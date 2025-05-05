@@ -24,9 +24,6 @@
    - Allocate 64 GB disk, 4–8 GB RAM
    - Install Xubuntu inside the VM
 3. Download ModelSim from: https://fpgasoftware.intel.com/
-4. Inside the VM, install ModelSim:
-   ```bash
-   chmod +x ModelSimSetup-<version>.run
-   ./ModelSimSetup-<version>.run
+4. Inside the VM, install ModelSim.
 5. Verify installation by launching ModelSim with `vsim` inside the VM;
    the GUI should open showing the console and waveform viewer without errors.
