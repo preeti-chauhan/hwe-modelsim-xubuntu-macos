@@ -25,5 +25,5 @@
    - Install Xubuntu inside the VM
 3. Download ModelSim from: https://fpgasoftware.intel.com/
 4. Inside the VM, install ModelSim.
-5. Verify installation by launching ModelSim with `vsim` inside the VM;
-   the GUI should open showing the console and waveform viewer without errors.
+5. Verify installation by launching ModelSim with `vsim` inside the VM.
+   - The GUI should open showing the console and waveform viewer without errors.
