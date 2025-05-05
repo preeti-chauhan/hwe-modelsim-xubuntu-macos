@@ -13,7 +13,7 @@
 ## System Configuration
 - **Host OS**: macOS (Apple Silicon)  
 - **Virtualization Tool**: [UTM](https://mac.getutm.app/)  
-- **Guest OS**: [Xubuntu 20.04 LTS or later](https://xubuntu.org/download)  
+- **Guest OS**: [Xubuntu 20.04 LTS or later](https://xubuntu.org/download) (select a mirror in a location close to you.)
 - **VM Specs**: 64 GB virtual disk, 4–8 GB RAM  
 - **Simulator**: [ModelSim Intel FPGA Edition (Lite)](https://fpgasoftware.intel.com/)
 
