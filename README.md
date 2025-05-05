@@ -1,16 +1,19 @@
-# ModelSim on Apple Silicon via Xubuntu VM
+# Verilog Simulation Setup with ModelSim on Xubuntu (UTM for macOS)
+A lightweight, reproducible hardware simulation environment using ModelSim Intel FPGA Edition inside a Xubuntu VM — optimized for Apple Silicon via UTM.
 
-## Overview
+## ModelSim on Apple Silicon via Xubuntu VM
+
+### Overview
 - A clean and portable way to run ModelSim on macOS using a Xubuntu virtual machine.  
 - Provides an environment to write, test, and simulate basic Verilog programs without OS compatibility issues.  
 - Keeps all simulation tasks fully contained within the VM, isolating them from the host system.
 
-## Motivation
+### Motivation
 - ModelSim is a widely used HDL simulator, but it is not natively supported on macOS.  
 - This project solves that by running ModelSim inside a Linux VM with full GUI and functional support.  
 - Enables a consistent Verilog simulation workflow on macOS without relying on unofficial tools or workarounds.
 
-## System Configuration
+### System Configuration
 - **Host OS**: macOS (Apple Silicon)  
 - **Virtualization Tool**: [UTM](https://mac.getutm.app/)  
 - **Guest OS**: [Xubuntu 20.04 LTS or later](https://xubuntu.org/download) (select a mirror in a location close to you.)
@@ -18,7 +21,7 @@
 - **Simulator**: [ModelSim Intel FPGA Edition (Lite)](https://fpgasoftware.intel.com/)
 
 
-## Setup Steps
+### Setup Steps
 1. Download the Xubuntu ISO from https://xubuntu.org/download  
 2. Create a new VM in UTM:
    - Allocate 64 GB disk, 4–8 GB RAM
@@ -28,13 +31,13 @@
 5. Verify installation by launching ModelSim with `vsim` inside the VM.
    - The GUI should open showing the console and waveform viewer without errors.
 
-# Installation Steps
+## Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
 
 ---
 
-## Step 1: Update System and Install Dependencies
+### Step 1: Update System and Install Dependencies
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -43,7 +46,7 @@ sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-me
 
 ---
 
-## Optional Fix: `dpkg` Error After Fresh Xubuntu Install
+### Optional Fix: `dpkg` Error After Fresh Xubuntu Install
 
 If you see:
 
@@ -72,7 +75,7 @@ Follow these steps to fix it:
 
 ---
 
-## Step 2: Download and Install ModelSim
+### Step 2: Download and Install ModelSim
 
 1. Visit: [https://fpgasoftware.intel.com](https://fpgasoftware.intel.com)
 2. Download: **ModelSim – Intel FPGA Edition for Linux**
@@ -91,7 +94,7 @@ Install path (recommended):
 
 ---
 
-## Step 3: Run ModelSim
+### Step 3: Run ModelSim
 
 ```bash
 cd ~/intelFPGA_lite/modelsim_ase/bin
@@ -100,3 +103,13 @@ cd ~/intelFPGA_lite/modelsim_ase/bin
 
 Use `./vsim -c` to run in console mode (faster on limited VMs).
 
+## Note: Copy-Paste Between macOS and Xubuntu in UTM
+
+If you're running Xubuntu in UTM on macOS:
+
+- **Copy (from macOS)**: `Cmd + C`
+- **Paste (into VM Terminal)**:  
+  Inside Xubuntu Terminal, press:
+  ```
+  Ctrl + Shift + V
+  ```
