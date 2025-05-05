@@ -75,33 +75,84 @@ Follow these steps to fix it:
 
 ---
 
-### Step 2: Download and Install ModelSim
+### Step 3: Download and Install ModelSim
 
-1. Visit: [https://fpgasoftware.intel.com](https://fpgasoftware.intel.com)
-2. Download: **ModelSim – Intel FPGA Edition for Linux**
-3. Then run:
+1. Download the Installer
+
+From within your **Xubuntu VM**, open Firefox and go to:
+
+[https://fpgasoftware.intel.com](https://fpgasoftware.intel.com)
+
+Then:
+
+- Select **ModelSim – Intel FPGA Edition (Linux)**
+- Choose the latest **Lite** or **Standard** version (Lite is free for non-commercial use)
+- Save the `.run` file to your `Downloads` folder  
+  (e.g., `ModelSimSetup-<version>.run`)
+
+> ℹ️ You may need to register or sign in with an Intel account
+
+---
+
+2. Make the Installer Executable
+
+Open a terminal and run:
 
 ```bash
 cd ~/Downloads
 chmod +x ModelSimSetup-*.run
+```
+
+Use `Tab` to autocomplete the filename if needed.
+
+---
+
+3. Run the Installer in Text Mode
+
+```bash
 ./ModelSimSetup-*.run --mode text
 ```
 
-Install path (recommended):  
+This avoids the GUI installer (which can be slow in UTM) and provides a simple terminal-based flow.
+
+---
+
+4. Choose the Install Directory
+
+When prompted, install to:
+
 ```bash
 ~/intelFPGA_lite/modelsim_ase/
+```
+
+If the folder doesn’t exist, the installer will create it.
+
+---
+
+5. Confirm Installation Success
+
+You should see a message like:
+
+```
+Installation completed successfully.
 ```
 
 ---
 
 ### Step 3: Run ModelSim
 
+To run ModelSim:
+
 ```bash
 cd ~/intelFPGA_lite/modelsim_ase/bin
 ./vsim
 ```
 
-Use `./vsim -c` to run in console mode (faster on limited VMs).
+Or, for command-line mode (faster in a VM):
+
+```bash
+./vsim -c
+```
 
 ## Note: 
 
