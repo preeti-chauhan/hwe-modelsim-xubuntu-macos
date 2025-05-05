@@ -103,7 +103,9 @@ cd ~/intelFPGA_lite/modelsim_ase/bin
 
 Use `./vsim -c` to run in console mode (faster on limited VMs).
 
-## Note: Copy-Paste Between macOS and Xubuntu in UTM
+## Note: 
+
+### Copy-Paste Between macOS and Xubuntu in UTM
 
 If you're running Xubuntu in UTM on macOS:
 
