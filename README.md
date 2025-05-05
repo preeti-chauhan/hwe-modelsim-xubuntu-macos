@@ -1,4 +1,4 @@
-# Running ModelSim on Apple Silicon Macs via Xubuntu VM
+# ModelSim on Apple Silicon via Xubuntu VM
 
 ## Overview
 - A clean and portable way to run ModelSim on macOS using a Xubuntu virtual machine.  
