@@ -141,18 +141,62 @@ Installation completed successfully.
 
 ### Step 3: Run ModelSim
 
-To run ModelSim:
+Once installed, you can launch ModelSim from its install directory.
+
+---
+
+1. Launch ModelSim GUI
+
+Open a terminal and run:
 
 ```bash
 cd ~/intelFPGA_lite/modelsim_ase/bin
 ./vsim
 ```
 
-Or, for command-line mode (faster in a VM):
+This starts the full GUI version of ModelSim. You should see the main simulation window open.
+
+---
+
+2. Launch in Console Mode (Faster for VMs)
+
+To run ModelSim in command-line mode (useful for scripting or low-resource systems):
 
 ```bash
 ./vsim -c
 ```
+
+This allows you to load designs, run simulations, and print results in the terminal.
+
+---
+
+3. Add to PATH (Optional)
+
+To avoid typing the full path every time, you can add ModelSim to your shell PATH:
+
+```bash
+echo 'export PATH="$HOME/intelFPGA_lite/modelsim_ase/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Now you can just run:
+
+```bash
+vsim
+```
+
+or
+
+```bash
+vsim -c
+```
+
+from anywhere in the terminal.
+
+---
+
+✅ ModelSim is now ready to simulate your Verilog designs!
+
 
 ## Note: 
 
