@@ -28,13 +28,13 @@
 5. Verify installation by launching ModelSim with `vsim` inside the VM.
    - The GUI should open showing the console and waveform viewer without errors.
 
-# 📥 Installation Steps
+# Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
 
 ---
 
-## ✅ Step 1: Update System and Install Dependencies
+## Step 1: Update System and Install Dependencies
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -43,7 +43,7 @@ sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-me
 
 ---
 
-## 🛠 Optional Fix: `dpkg` Error After Fresh Xubuntu Install
+## Optional Fix: `dpkg` Error After Fresh Xubuntu Install
 
 If you see:
 
@@ -72,7 +72,7 @@ Follow these steps to fix it:
 
 ---
 
-## 📦 Step 2: Download and Install ModelSim
+## Step 2: Download and Install ModelSim
 
 1. Visit: [https://fpgasoftware.intel.com](https://fpgasoftware.intel.com)
 2. Download: **ModelSim – Intel FPGA Edition for Linux**
@@ -91,7 +91,7 @@ Install path (recommended):
 
 ---
 
-## ▶️ Step 3: Run ModelSim
+## Step 3: Run ModelSim
 
 ```bash
 cd ~/intelFPGA_lite/modelsim_ase/bin
