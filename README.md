@@ -20,7 +20,7 @@
 
 ## Setup Steps
 1. Download the Xubuntu ISO from https://xubuntu.org/download  
-2. Create a new VM in UTM or VirtualBox:
+2. Create a new VM in UTM:
    - Allocate 64 GB disk, 4–8 GB RAM
    - Install Xubuntu inside the VM
 3. Download ModelSim from: https://fpgasoftware.intel.com/
