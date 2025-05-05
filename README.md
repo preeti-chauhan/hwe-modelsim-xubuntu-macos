@@ -1,5 +1,5 @@
 # Verilog Simulation Setup with ModelSim on Xubuntu
-A lightweight, reproducible hardware simulation environment using ModelSim Intel FPGA Edition inside a Xubuntu VM — optimized for Apple Silicon via UTM.
+A Verilog simulation environment using ModelSim Intel FPGA Edition inside a Xubuntu virtual machine, built and run via UTM on macOS.
 
 ## ModelSim on Apple Silicon via Xubuntu VM
 
