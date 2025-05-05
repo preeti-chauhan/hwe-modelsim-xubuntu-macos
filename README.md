@@ -28,4 +28,5 @@
    ```bash
    chmod +x ModelSimSetup-<version>.run
    ./ModelSimSetup-<version>.run
-5. Verify installation by launching ModelSim with `vsim` inside the VM; the GUI should open showing the console and waveform viewer without errors.
+5. Verify installation by launching ModelSim with `vsim` inside the VM;
+   the GUI should open showing the console and waveform viewer without errors.
