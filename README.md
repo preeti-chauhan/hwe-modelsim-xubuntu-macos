@@ -1,4 +1,4 @@
-# # ModelSim Verilog Simulation on macOS via Xubuntu VM
+# ModelSim Verilog Simulation on macOS via Xubuntu VM
 
 ## Overview
 - A clean and portable way to run ModelSim on macOS using a Xubuntu virtual machine.  
