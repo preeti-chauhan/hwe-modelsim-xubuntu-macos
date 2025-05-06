@@ -23,22 +23,22 @@ A Verilog simulation environment using ModelSim Intel FPGA Edition inside a Xubu
 
 ### Setup Steps
 1. Download the Xubuntu ISO from https://xubuntu.org/download
-   <img src="images/setup_steps_1.png" width="400">
+   <img src="images/setup_steps_1.png" width="600">
    
 2. Create a new VM in UTM:
    - Allocate 64 GB disk, 4–8 GB RAM
    - Install Xubuntu inside the VM
-   <img src="images/setup_steps_2.png" width="400">
+   <img src="images/setup_steps_2.png" width="600">
    
 3. Download ModelSim from: https://fpgasoftware.intel.com/
-   <img src="images/setup_steps_3.png" width="400">
+   <img src="images/setup_steps_3.png" width="600">
    
 4. Inside the VM, install ModelSim.
-   <img src="images/setup_steps_4.png" width="400">
+   <img src="images/setup_steps_4.png" width="600">
    
 5. Verify installation by launching ModelSim with `vsim` inside the VM.
    - The GUI should open showing the console and waveform viewer without errors.
-   <img src="images/setup_steps_5.png" width="400">
+   <img src="images/setup_steps_5.png" width="600">
 
 ## Installation Steps
 
