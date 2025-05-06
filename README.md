@@ -143,6 +143,7 @@ Follow these steps to fix it:
    ```
 
 If the problem continues, check which package failed with:
+It means: “Give me all packages where the 3rd character (error state) is r” → these are reinstall-required or broken.
 
 ```bash
 dpkg -l | grep ^..r
@@ -150,6 +151,13 @@ dpkg -l | grep ^..r
 
 Then remove and reinstall that package manually if needed.
 If it returns nothing, repeat (**3.**) above. 
+
+**Important** There could be memory issue! mostly because this could me mistakenly done in the Live session, not the real installed Xubuntu !!!
+
+Confirm:
+```bash
+df -h
+```
 
 ---
 
