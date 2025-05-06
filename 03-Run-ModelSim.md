@@ -15,6 +15,8 @@ cd ~/intelFPGA_std/modelsim_ase/bin
 
 This starts the full GUI version of ModelSim. It should show the main simulation window open.
 
+<img src="images/vsim_from_bin.png" width="600">
+
 ---
 
 **2. Launch in Console Mode (Faster for VMs):**
