@@ -60,6 +60,10 @@ from anywhere in the terminal.
 
 ### 1. **./vsim** not working
 
+### 2. **vsim** not working
+
+
+
 
 
 
