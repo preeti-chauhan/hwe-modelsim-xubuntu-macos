@@ -69,7 +69,7 @@ These libraries support GUI rendering, simulation timing, and system calls Model
 
 ---
 
-### Optional Fix: `dpkg` Error After Fresh Xubuntu Install
+### Optional Fix-1: `dpkg` Error After Fresh Xubuntu Install
 
 If you see:
 
@@ -97,7 +97,7 @@ Follow these steps to fix it:
    ```
 ---
 
-### Optional Fix: Broken Install or `dpkg` Errors in UTM VM
+### Optional Fix-2: Broken Install or `dpkg` Errors in UTM VM
 
 In some UTM VM setups, you might encounter errors like:
 
