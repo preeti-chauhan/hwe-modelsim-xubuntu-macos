@@ -67,6 +67,7 @@ These libraries support GUI rendering, simulation timing, and system calls Model
 
 > 📝 Note: If you encounter a `dpkg` error, see the “Fixing dpkg error” section.
 
+---
 
 ### Optional Fix: `dpkg` Error After Fresh Xubuntu Install
 
@@ -94,6 +95,51 @@ Follow these steps to fix it:
    sudo apt update
    sudo apt upgrade -y
    ```
+---
+
+### Optional Fix: Broken Install or `dpkg` Errors in UTM VM
+
+In some UTM VM setups, you might encounter errors like:
+
+```
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+dpkg-deb: error: paste subprocess was killed by signal (Broken pipe)
+Stale file handle
+```
+
+These are often caused by:
+- Interrupted package installs
+- `cdrom` source leftover in `/etc/apt/sources.list`
+- Virtual disk sync issues (especially after suspend/resume)
+
+Follow these steps to fix it:
+
+1. **Reboot your Xubuntu VM** to clear stale file references:
+   ```bash
+   sudo reboot
+   ```
+
+2. **After reboot, open terminal and run:**
+
+   ```bash
+   sudo dpkg --configure -a
+   sudo apt --fix-broken install
+   ```
+
+3. **Then continue with updates and ModelSim dependency install:**
+
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-mesa -y
+   ```
+
+If the problem continues, check which package failed with:
+
+```bash
+dpkg -l | grep ^..r
+```
+
+Then remove and reinstall that package manually if needed.
 
 ---
 
