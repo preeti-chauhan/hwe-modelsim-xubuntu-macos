@@ -68,7 +68,7 @@ from anywhere in the terminal.
     ln -s ~/intelFPGA_std/modelsim_ae/linux/vsim ~/intelFPGA_std/modelsim_ae/bin/vsim`
     ```
     
-  - Analyze all the shared libraries that an executable (binary file) needs to run, using list dynamic dependencies.
+  - Analyzed all the shared libraries that an executable (binary file) needs to run, using list dynamic dependencies.
     
     ```bash
     ldd ~/intelFPGA_std/modelsim_ae/linux/vsim`
