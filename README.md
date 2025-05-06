@@ -152,7 +152,9 @@ dpkg -l | grep ^..r
 Then remove and reinstall that package manually if needed.
 If it returns nothing, repeat (**3.**) above. 
 
-**Important** There could be memory issue! mostly because this could me mistakenly done in the Live session, not the real installed Xubuntu !!!
+**Important** There could be memory issue! 
+
+This could me mistakenly done in the Live session, not the real installed Xubuntu !!!
 
 Confirm:
 ```bash
