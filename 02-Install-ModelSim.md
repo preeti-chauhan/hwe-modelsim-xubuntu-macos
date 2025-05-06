@@ -33,7 +33,7 @@ From within your **Xubuntu VM**, open Firefox and go to:
 Then:
 
 - Select **ModelSim – Intel FPGA Edition (Linux)**
-- Choose **Standard** version
+- Choose **Standard** version (check installation guides)
 - Save the `.run` file to your `Downloads` folder  
   (e.g., `ModelSimSetup-<version>.run`)
 
