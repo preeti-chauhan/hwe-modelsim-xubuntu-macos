@@ -123,7 +123,7 @@ Confirm:
 df -h
 ```
 ---
-
+#fix-3
 ## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
 
 If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
