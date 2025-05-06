@@ -5,6 +5,19 @@ Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your 
 
 ---
 
+### Note: Copy-Paste Between macOS and Xubuntu in UTM
+
+If running Xubuntu in UTM on macOS:
+
+- **Copy (from macOS)**: `Cmd + C`
+- **Paste (into VM Terminal)**:  
+  Inside Xubuntu Terminal, press:
+  ```
+  Ctrl + Shift + V
+  ```
+
+---
+
 ### Step 1: Update System and Install Dependencies
 
 Before installing ModelSim, update the package manager and install essential development libraries to ensure compatibility.
@@ -188,19 +201,5 @@ It is now in the **fully installed environment** and ready to proceed with:
 
 - Installing ModelSim
 - Running updates and simulation scripts
-  
 ---
-
-
-## Note: 
-
-### Copy-Paste Between macOS and Xubuntu in UTM
-
-If running Xubuntu in UTM on macOS:
-
-- **Copy (from macOS)**: `Cmd + C`
-- **Paste (into VM Terminal)**:  
-  Inside Xubuntu Terminal, press:
-  ```
-  Ctrl + Shift + V
-  ```
+**Next:** [Install ModelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/02-Install-ModelSim.md)
