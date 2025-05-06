@@ -2,7 +2,7 @@
 ## Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
-- First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](#fix-3), to ensure correct drive and avoid errors.
+- First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)), to ensure correct drive and avoid errors.
 
 ---
 
@@ -123,7 +123,7 @@ Confirm:
 df -h
 ```
 ---
-#fix-3
+
 ## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
 
 If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
