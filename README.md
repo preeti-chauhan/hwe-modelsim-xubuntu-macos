@@ -39,12 +39,34 @@ Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your 
 
 ### Step 1: Update System and Install Dependencies
 
+Before installing ModelSim, update the package manager and install essential development libraries to ensure compatibility.
+
+---
+
+1. Update and Upgrade System Packages
+
+Open a terminal and run:
+
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
+
+This ensures your package lists and system software are current.
+
+---
+
+2. Install Required Dependencies
+
+ModelSim requires several runtime libraries and developer tools to run smoothly on Linux. Install them with:
+
+```bash
 sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-mesa -y
 ```
 
----
+These libraries support GUI rendering, simulation timing, and system calls ModelSim depends on.
+
+> 📝 Note: If you encounter a `dpkg` error, see the “Fixing dpkg error” section.
+
 
 ### Optional Fix: `dpkg` Error After Fresh Xubuntu Install
 
@@ -75,9 +97,9 @@ Follow these steps to fix it:
 
 ---
 
-### Step 3: Download and Install ModelSim
+### Step 2: Download and Install ModelSim
 
-1. Download the Installer
+1. Download the Installer:
 
 From within your **Xubuntu VM**, open Firefox and go to:
 
@@ -94,7 +116,7 @@ Then:
 
 ---
 
-2. Make the Installer Executable
+2. Make the Installer Executable:
 
 Open a terminal and run:
 
@@ -107,7 +129,7 @@ Use `Tab` to autocomplete the filename if needed.
 
 ---
 
-3. Run the Installer in Text Mode
+3. Run the Installer in Text Mode:
 
 ```bash
 ./ModelSimSetup-*.run --mode text
@@ -117,7 +139,7 @@ This avoids the GUI installer (which can be slow in UTM) and provides a simple t
 
 ---
 
-4. Choose the Install Directory
+4. Choose the Install Directory:
 
 When prompted, install to:
 
@@ -129,7 +151,7 @@ If the folder doesn’t exist, the installer will create it.
 
 ---
 
-5. Confirm Installation Success
+5. Confirm Installation Success:
 
 You should see a message like:
 
@@ -145,7 +167,7 @@ Once installed, you can launch ModelSim from its install directory.
 
 ---
 
-1. Launch ModelSim GUI
+1. Launch ModelSim GUI:
 
 Open a terminal and run:
 
@@ -158,7 +180,7 @@ This starts the full GUI version of ModelSim. You should see the main simulation
 
 ---
 
-2. Launch in Console Mode (Faster for VMs)
+2. Launch in Console Mode (Faster for VMs):
 
 To run ModelSim in command-line mode (useful for scripting or low-resource systems):
 
@@ -170,7 +192,7 @@ This allows you to load designs, run simulations, and print results in the termi
 
 ---
 
-3. Add to PATH (Optional)
+3. Add to PATH (Optional):
 
 To avoid typing the full path every time, you can add ModelSim to your shell PATH:
 
