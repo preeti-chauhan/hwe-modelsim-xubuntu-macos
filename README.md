@@ -186,17 +186,17 @@ These steps help with **boot into the actual installed Xubuntu system** on the v
 
 **1. Shut Down the VM**
 
-- Open UTM
 - Click the **Stop** button
 
 ---
 
 **2. Remove the Xubuntu ISO**
 
-- In UTM, click **Edit** on the VM
+- In UTM, click **Edit** on the VM (right click)
 - Go to the **Drives** section
-- Look for the attached **`xubuntu-22.04-desktop-amd64.iso`**
-- Uncheck or remove it
+- Do not remove the **real virtual hard disk** (~64 GB or more)
+- Remove the attached **`xubuntu-22.04-desktop-amd64.iso`** (~2–4 GB)
+- Uncheck or remove it 
 
 ---
 
