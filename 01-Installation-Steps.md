@@ -2,7 +2,6 @@
 ## Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
-- First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](#Optional-Fix-3), to ensure correct drive and avoid errors.
 
 ---
 ### Note: Copy-Paste Between macOS and Xubuntu in UTM
@@ -17,7 +16,78 @@ If running Xubuntu in UTM on macOS:
   ```
 ---
 
-### Step 1: Update System and Install Dependencies
+### Step 1: 
+
+**Boot from Installed Xubuntu (Exit Live ISO Session)**
+
+If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
+
+These steps help with **boot into the actual installed Xubuntu system** on the virtual disk.
+
+---
+
+### Problem Symptoms
+
+- `df -h` shows `/cow` and `/cdrom` as full
+- getting errors like:
+  ```
+  No space left on device
+  E: Sub-process /usr/bin/dpkg returned an error code (1)
+  ```
+- It is not booting from `/dev/sda1` or the installed filesystem
+
+---
+
+### Fix It: Boot from the Installed Xubuntu System
+
+**1. Shut Down the VM**
+
+- Click the **Stop** button
+
+---
+
+**2. Remove the Xubuntu ISO**
+
+- In UTM, click **Edit** on the VM (right click)
+- Go to the **Drives** section
+- **Do not remove the real virtual hard disk** (*.qcow2 is ~64 GB or more (virtual), 8.19 GB (actual), this will expand with use!)
+- Remove the attached **`xubuntu-22.04-desktop-amd64.iso`** (*.iso is ~2–4 GB)
+- Uncheck or remove it 
+
+---
+
+**3. Restart the VM**
+
+- Start the VM again from UTM
+- It should now boot from the installed Xubuntu system on disk
+
+---
+
+### Verify it is in the Real System
+
+Run:
+
+```bash
+df -h
+```
+
+✅ It should show something like:
+
+```
+/dev/sda1        64G    4G   58G  7% /
+```
+
+No `/cow`, no `/cdrom`.
+
+---
+
+It is now in the **fully installed environment** and ready to proceed with:
+
+- Installing ModelSim
+- Running updates and simulation scripts
+
+
+### Step 2: Update System and Install Dependencies
 
 Before installing ModelSim, update the package manager and install essential development libraries to ensure compatibility.
 
@@ -139,72 +209,3 @@ df -h
 ```
 ---
 
-## Optional Fix-3: 
-
-**Boot from Installed Xubuntu (Exit Live ISO Session)**
-
-If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
-
-These steps help with **boot into the actual installed Xubuntu system** on the virtual disk.
-
----
-
-### Problem Symptoms
-
-- `df -h` shows `/cow` and `/cdrom` as full
-- getting errors like:
-  ```
-  No space left on device
-  E: Sub-process /usr/bin/dpkg returned an error code (1)
-  ```
-- It is not booting from `/dev/sda1` or the installed filesystem
-
----
-
-### Fix It: Boot from the Installed Xubuntu System
-
-**1. Shut Down the VM**
-
-- Click the **Stop** button
-
----
-
-**2. Remove the Xubuntu ISO**
-
-- In UTM, click **Edit** on the VM (right click)
-- Go to the **Drives** section
-- **Do not remove the real virtual hard disk** (*.qcow2 is ~64 GB or more (virtual), 8.19 GB (actual), this will expand with use!)
-- Remove the attached **`xubuntu-22.04-desktop-amd64.iso`** (*.iso is ~2–4 GB)
-- Uncheck or remove it 
-
----
-
-**3. Restart the VM**
-
-- Start the VM again from UTM
-- It should now boot from the installed Xubuntu system on disk
-
----
-
-### Verify it is in the Real System
-
-Run:
-
-```bash
-df -h
-```
-
-✅ It should show something like:
-
-```
-/dev/sda1        64G    4G   58G  7% /
-```
-
-No `/cow`, no `/cdrom`.
-
----
-
-It is now in the **fully installed environment** and ready to proceed with:
-
-- Installing ModelSim
-- Running updates and simulation scripts
