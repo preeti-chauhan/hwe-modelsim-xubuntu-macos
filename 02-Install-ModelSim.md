@@ -69,7 +69,7 @@ This avoids the GUI installer (which can be slow in UTM) and provides a simple t
 When prompted, install to:
 
 ```bash
-~/intelFPGA_std/modelsim_int/
+~/intelFPGA_std/
 ```
 
 If the folder doesn’t exist, the installer will create it.
@@ -97,7 +97,7 @@ Once installed, launch ModelSim from its install directory.
 Open a terminal and run:
 
 ```bash
-cd ~/intelFPGA_std/modelsim_int/modelsim_ase/bin
+cd ~/intelFPGA_std/modelsim_ase/bin
 ./vsim
 ```
 
@@ -122,7 +122,7 @@ This allows to load designs, run simulations, and print results in the terminal.
 To avoid typing the full path every time, optionally add ModelSim to the shell PATH:
 
 ```bash
-echo 'export PATH="$HOME/intelFPGA_std/modelsim_int/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/intelFPGA_std/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
