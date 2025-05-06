@@ -164,21 +164,21 @@ df -h
 
 ## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
 
-If you're stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), you'll encounter limited disk space and installation errors.
+If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
 
-This guide helps you **boot into the actual installed Xubuntu system** on your virtual disk.
+These steps help with **boot into the actual installed Xubuntu system** on the virtual disk.
 
 ---
 
 ### Problem Symptoms
 
 - `df -h` shows `/cow` and `/cdrom` as full
-- You get errors like:
+- getting errors like:
   ```
   No space left on device
   E: Sub-process /usr/bin/dpkg returned an error code (1)
   ```
-- You are not booting from `/dev/sda1` or your installed filesystem
+- It is not booting from `/dev/sda1` or the installed filesystem
 
 ---
 
@@ -193,7 +193,7 @@ This guide helps you **boot into the actual installed Xubuntu system** on your v
 
 **2. Remove the Xubuntu ISO**
 
-- In UTM, click **Edit** on your VM
+- In UTM, click **Edit** on the VM
 - Go to the **Drives** section
 - Look for the attached **`xubuntu-22.04-desktop-amd64.iso`**
 - Uncheck or remove it
@@ -203,11 +203,11 @@ This guide helps you **boot into the actual installed Xubuntu system** on your v
 **3. Restart the VM**
 
 - Start the VM again from UTM
-- It should now boot from your installed Xubuntu system on disk
+- It should now boot from the installed Xubuntu system on disk
 
 ---
 
-### Verify You’re in the Real System
+### Verify it is in the Real System
 
 Run:
 
@@ -215,7 +215,7 @@ Run:
 df -h
 ```
 
-✅ You should see something like:
+✅ It should show something like:
 
 ```
 /dev/sda1        64G    4G   58G  7% /
@@ -225,7 +225,7 @@ No `/cow`, no `/cdrom`.
 
 ---
 
-You're now in the **fully installed environment** and ready to proceed with:
+It is now in the **fully installed environment** and ready to proceed with:
 
 - Installing ModelSim
 - Running updates and simulation scripts
@@ -247,7 +247,7 @@ Then:
 - Save the `.run` file to your `Downloads` folder  
   (e.g., `ModelSimSetup-<version>.run`)
 
-> ℹ️ You may need to register or sign in with an Intel account
+> ℹ️ This may require to register or sign in with an Intel account
 
 ---
 
@@ -288,7 +288,7 @@ If the folder doesn’t exist, the installer will create it.
 
 **5. Confirm Installation Success:**
 
-You should see a message like:
+It shows a message like:
 
 ```
 Installation completed successfully.
@@ -298,7 +298,7 @@ Installation completed successfully.
 
 ### Step 3: Run ModelSim
 
-Once installed, you can launch ModelSim from its install directory.
+Once installed, launch ModelSim from its install directory.
 
 ---
 
@@ -311,7 +311,7 @@ cd ~/intelFPGA_lite/modelsim_ase/bin
 ./vsim
 ```
 
-This starts the full GUI version of ModelSim. You should see the main simulation window open.
+This starts the full GUI version of ModelSim. It should show the main simulation window open.
 
 ---
 
@@ -323,20 +323,20 @@ To run ModelSim in command-line mode (useful for scripting or low-resource syste
 ./vsim -c
 ```
 
-This allows you to load designs, run simulations, and print results in the terminal.
+This allows to load designs, run simulations, and print results in the terminal.
 
 ---
 
 **3. Add to PATH (Optional):**
 
-To avoid typing the full path every time, you can add ModelSim to your shell PATH:
+To avoid typing the full path every time, optionally add ModelSim to the shell PATH:
 
 ```bash
 echo 'export PATH="$HOME/intelFPGA_lite/modelsim_ase/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Now you can just run:
+Now it can just be run using:
 
 ```bash
 vsim
@@ -359,7 +359,7 @@ from anywhere in the terminal.
 
 ### Copy-Paste Between macOS and Xubuntu in UTM
 
-If you're running Xubuntu in UTM on macOS:
+If running Xubuntu in UTM on macOS:
 
 - **Copy (from macOS)**: `Cmd + C`
 - **Paste (into VM Terminal)**:  
