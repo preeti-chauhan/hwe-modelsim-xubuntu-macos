@@ -86,10 +86,7 @@ Installation completed successfully.
 
 ---
 
-
-## Troubleshooting
-
-### 1) ./vsim gives error
+**Next:** [Run ModfelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/03-Run-ModelSim.md)
 
 
 
