@@ -123,19 +123,19 @@ These are often caused by:
 
 Follow these steps to fix it:
 
-1. **Reboot your Xubuntu VM** to clear stale file references:
+**1. Reboot your Xubuntu VM** to clear stale file references:
    ```bash
    sudo reboot
    ```
 
-2. **After reboot, open terminal and run:**
+**2. After reboot, open terminal and run:**
 
    ```bash
    sudo dpkg --configure -a
    sudo apt --fix-broken install
    ```
 
-3. **Then continue with updates and ModelSim dependency install:**
+**3. Then continue with updates and ModelSim dependency install:**
 
    ```bash
    sudo apt update && sudo apt upgrade -y
@@ -149,7 +149,7 @@ dpkg -l | grep ^..r
 ```
 
 Then remove and reinstall that package manually if needed.
-If it returns nothing, repeat (3.) above. 
+If it returns nothing, repeat (**3.**) above. 
 
 ---
 
