@@ -97,8 +97,6 @@ sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-me
 These libraries support GUI rendering, simulation timing, and system calls ModelSim depends on.
 
 ---
-**Next:** [Install ModelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/02-Install-ModelSim.md)
----
 
 ## Troubleshooting
 
@@ -178,3 +176,7 @@ dpkg -l | grep ^..r
 ```
 
 Then remove and reinstall that package manually if needed.
+
+---
+
+**Next:** [Install ModelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/02-Install-ModelSim.md)
