@@ -146,7 +146,9 @@ from anywhere in the terminal.
 
 ## Troubleshooting
 
-### 1) vsim command not working 
+### 1) ./vsim gives error
+
+
 
 
 
