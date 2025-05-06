@@ -5,6 +5,17 @@ Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your 
 - First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](#Optional-Fix-3), to ensure correct drive and avoid errors.
 
 ---
+## Note: Copy-Paste Between macOS and Xubuntu in UTM
+
+If running Xubuntu in UTM on macOS:
+
+- **Copy (from macOS)**: `Cmd + C`
+- **Paste (into VM Terminal)**:  
+  Inside Xubuntu Terminal, press:
+  ```
+  Ctrl + Shift + V
+  ```
+---
 
 ### Step 1: Update System and Install Dependencies
 
@@ -190,19 +201,6 @@ df -h
 ```
 
 No `/cow`, no `/cdrom`.
-
----
-
-## Note: Copy-Paste Between macOS and Xubuntu in UTM
-
-If running Xubuntu in UTM on macOS:
-
-- **Copy (from macOS)**: `Cmd + C`
-- **Paste (into VM Terminal)**:  
-  Inside Xubuntu Terminal, press:
-  ```
-  Ctrl + Shift + V
-  ```
 
 ---
 
