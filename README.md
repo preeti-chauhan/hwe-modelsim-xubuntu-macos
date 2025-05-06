@@ -43,7 +43,7 @@ Before installing ModelSim, update the package manager and install essential dev
 
 ---
 
-1. Update and Upgrade System Packages:
+**1. Update and Upgrade System Packages:**
 
 Open a terminal and run:
 
@@ -55,7 +55,7 @@ This ensures your package lists and system software are current.
 
 ---
 
-2. Install Required Dependencies:
+**2. Install Required Dependencies:**
 
 ModelSim requires several runtime libraries and developer tools to run smoothly on Linux. Install them with:
 
@@ -99,7 +99,7 @@ Follow these steps to fix it:
 
 ### Step 2: Download and Install ModelSim
 
-1. Download the Installer:
+**1. Download the Installer:**
 
 From within your **Xubuntu VM**, open Firefox and go to:
 
@@ -116,7 +116,7 @@ Then:
 
 ---
 
-2. Make the Installer Executable:
+**2. Make the Installer Executable:**
 
 Open a terminal and run:
 
@@ -129,7 +129,7 @@ Use `Tab` to autocomplete the filename if needed.
 
 ---
 
-3. Run the Installer in Text Mode:
+**3. Run the Installer in Text Mode:**
 
 ```bash
 ./ModelSimSetup-*.run --mode text
@@ -139,7 +139,7 @@ This avoids the GUI installer (which can be slow in UTM) and provides a simple t
 
 ---
 
-4. Choose the Install Directory:
+**4. Choose the Install Directory:**
 
 When prompted, install to:
 
@@ -151,7 +151,7 @@ If the folder doesn’t exist, the installer will create it.
 
 ---
 
-5. Confirm Installation Success:
+**5. Confirm Installation Success:**
 
 You should see a message like:
 
@@ -167,7 +167,7 @@ Once installed, you can launch ModelSim from its install directory.
 
 ---
 
-1. Launch ModelSim GUI:
+**1. Launch ModelSim GUI:**
 
 Open a terminal and run:
 
@@ -180,7 +180,7 @@ This starts the full GUI version of ModelSim. You should see the main simulation
 
 ---
 
-2. Launch in Console Mode (Faster for VMs):
+**2. Launch in Console Mode (Faster for VMs):**
 
 To run ModelSim in command-line mode (useful for scripting or low-resource systems):
 
@@ -192,7 +192,7 @@ This allows you to load designs, run simulations, and print results in the termi
 
 ---
 
-3. Add to PATH (Optional):
+**3. Add to PATH (Optional):**
 
 To avoid typing the full path every time, you can add ModelSim to your shell PATH:
 
