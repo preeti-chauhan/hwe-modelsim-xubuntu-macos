@@ -6,19 +6,6 @@ Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your 
 
 ---
 
-### Note: Copy-Paste Between macOS and Xubuntu in UTM
-
-If running Xubuntu in UTM on macOS:
-
-- **Copy (from macOS)**: `Cmd + C`
-- **Paste (into VM Terminal)**:  
-  Inside Xubuntu Terminal, press:
-  ```
-  Ctrl + Shift + V
-  ```
-
----
-
 ### Step 1: Update System and Install Dependencies
 
 Before installing ModelSim, update the package manager and install essential development libraries to ensure compatibility.
@@ -47,9 +34,11 @@ sudo apt install build-essential libxft2 libxext6 libx11-dev libxtst6 libglu1-me
 
 These libraries support GUI rendering, simulation timing, and system calls ModelSim depends on.
 
-> 📝 Note: If you encounter a `dpkg` error, see the “Fixing dpkg error” section.
-
 ---
+**Next:** [Install ModelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/02-Install-ModelSim.md)
+---
+
+## Troubleshooting
 
 ### Optional Fix-1: `dpkg` Error After Fresh Xubuntu Install
 
@@ -198,9 +187,20 @@ No `/cow`, no `/cdrom`.
 
 ---
 
+## Note: Copy-Paste Between macOS and Xubuntu in UTM
+
+If running Xubuntu in UTM on macOS:
+
+- **Copy (from macOS)**: `Cmd + C`
+- **Paste (into VM Terminal)**:  
+  Inside Xubuntu Terminal, press:
+  ```
+  Ctrl + Shift + V
+  ```
+
+---
+
 It is now in the **fully installed environment** and ready to proceed with:
 
 - Installing ModelSim
 - Running updates and simulation scripts
----
-**Next:** [Install ModelSim](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/02-Install-ModelSim.md)
