@@ -194,8 +194,8 @@ These steps help with **boot into the actual installed Xubuntu system** on the v
 
 - In UTM, click **Edit** on the VM (right click)
 - Go to the **Drives** section
-- Do not remove the **real virtual hard disk** (~64 GB or more)
-- Remove the attached **`xubuntu-22.04-desktop-amd64.iso`** (~2–4 GB)
+- **Do not remove the real virtual hard disk** (*.qcow2 is ~64 GB or more (virtual), 8.19 GB (actual), this will expand with use!)
+- Remove the attached **`xubuntu-22.04-desktop-amd64.iso`** (*.iso is ~2–4 GB)
 - Uncheck or remove it 
 
 ---
