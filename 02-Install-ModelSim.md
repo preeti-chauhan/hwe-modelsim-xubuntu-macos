@@ -13,7 +13,7 @@ This installs the latest stable version of Firefox and adds it to your applicati
 
 ---
 
-**Launch Firefox**
+**Optional: Launch Firefox**
 
 After installation, launch Firefox by either:
 
