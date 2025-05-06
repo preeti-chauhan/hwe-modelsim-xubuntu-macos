@@ -1,5 +1,29 @@
 ### Step 2: Download and Install ModelSim
 
+**Optional: Install Firefox**
+
+Run the following commands:
+
+```bash
+sudo apt update
+sudo apt install firefox -y
+```
+
+This installs the latest stable version of Firefox and adds it to your application menu.
+
+---
+
+**Launch Firefox**
+
+After installation, launch Firefox by either:
+
+- Clicking **Applications → Internet → Firefox**
+- Or running in terminal:
+
+```bash
+firefox &
+```
+
 **1. Download the Installer:**
 
 From within your **Xubuntu VM**, open Firefox and go to:
