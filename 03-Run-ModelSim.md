@@ -56,12 +56,26 @@ from anywhere in the terminal.
 
 ---
 
+## Troubleshooting notes:
+
+- Selected **option-1** when prompted during modelsim installation.
+- Gave the installation path as: **~/intelFPGA_std/** it created modelsim_ae by itself inside it.
+- During several installation and deletes, did the following:
+  - The original vsim in bin/ pointed to a faulty script (../vco) that failed to launch properly.
+  - Instead use this symlink to run linux/vsim directly:
+    `ln -s ~/intelFPGA_std/modelsim_ae/linux/vsim ~/intelFPGA_std/modelsim_ae/bin/vsim`
+  - Analyze the simulator binary and lists which shared libraries it needs to run.
+    Confirmed that 32-bit dependencies were needed.
+    `ldd ~/intelFPGA_std/modelsim_ae/linux/vsim`
+  - Enable installation of 32-bit (i386) packages on the 64-bit Ubuntu system.
+    `sudo dpkg --add-architecture i386`
+  - Refreshed your package list now that i386 was added.
+    `sudo apt update`
+  - Installs the essential 32-bit runtime libraries ModelSim requires:
+    `sudo apt install libc6:i386 libx11-6:i386 libxft2:i386 libxext6:i386 libxtst6:i386 libglu1-mesa:i386 -y`
+
+
 ✅ ModelSim is now ready to simulate Verilog designs!
-
-
-
-
-
-
+    
 
 
