@@ -149,6 +149,7 @@ dpkg -l | grep ^..r
 ```
 
 Then remove and reinstall that package manually if needed.
+If it returns nothing, repeat (3.) above. 
 
 ---
 
