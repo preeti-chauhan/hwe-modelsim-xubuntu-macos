@@ -187,7 +187,7 @@ These steps help with **boot into the actual installed Xubuntu system** on the v
 **1. Shut Down the VM**
 
 - Open UTM
-- Click the **⏹️ Stop** button (or choose `Actions → Force Stop`)
+- Click the **Stop** button
 
 ---
 
