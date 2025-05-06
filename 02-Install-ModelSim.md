@@ -97,7 +97,7 @@ Once installed, launch ModelSim from its install directory.
 Open a terminal and run:
 
 ```bash
-cd ~/intelFPGA_std/modelsim_int/bin
+cd ~/intelFPGA_std/modelsim_int/modelsim_ase/bin
 ./vsim
 ```
 
