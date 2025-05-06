@@ -20,25 +20,6 @@ If running Xubuntu in UTM on macOS:
 
 **Boot from Installed Xubuntu (Exit Live ISO Session)**
 
-If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
-
-These steps help with **boot into the actual installed Xubuntu system** on the virtual disk.
-
----
-
-### Problem Symptoms
-
-- `df -h` shows `/cow` and `/cdrom` as full
-- getting errors like:
-  ```
-  No space left on device
-  E: Sub-process /usr/bin/dpkg returned an error code (1)
-  ```
-- It is not booting from `/dev/sda1` or the installed filesystem
-
----
-
-### Fix It: Boot from the Installed Xubuntu System
 
 **1. Shut Down the VM**
 
@@ -197,15 +178,3 @@ dpkg -l | grep ^..r
 ```
 
 Then remove and reinstall that package manually if needed.
-If it returns nothing, repeat (**3.**) above. 
-
-**Important** There could be memory issue! 
-
-This could me mistakenly done in the Live session, not the real installed Xubuntu !!!
-
-Confirm:
-```bash
-df -h
-```
----
-
