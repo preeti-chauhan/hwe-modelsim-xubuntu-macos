@@ -58,9 +58,7 @@ from anywhere in the terminal.
 
 ✅ ModelSim is now ready to simulate Verilog designs!
 
-## Troubleshooting
 
-### 1. **vsim** not working
 
 
 
