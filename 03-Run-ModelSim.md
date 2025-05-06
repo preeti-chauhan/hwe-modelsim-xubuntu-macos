@@ -58,9 +58,7 @@ from anywhere in the terminal.
 
 ## Troubleshooting
 
-### 1. **./vsim** not working
-
-### 2. **vsim** not working
+### 1. **vsim** not working
 
 
 
