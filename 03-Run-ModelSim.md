@@ -83,9 +83,9 @@ from anywhere in the terminal.
     ```
     
   - Install the missing dependencies ModelSim requires.
-   ```bash
+    ```bash
     sudo apt install libc6:i386 libx11-6:i386 libxft2:i386 libxext6:i386 libxtst6:i386 libglu1-mesa:i386 -y
-   ```
+    ```
     
 ✅ ModelSim is now ready to simulate Verilog designs!
     
