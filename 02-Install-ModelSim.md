@@ -1,9 +1,5 @@
 ### Step 2: Download and Install ModelSim
 
-## Reference: ModelSim Installation Guides
-
-
-
 **Optional: Install Firefox**
 
 Run the following commands:
