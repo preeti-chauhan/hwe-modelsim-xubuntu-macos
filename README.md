@@ -34,10 +34,8 @@ A Verilog simulation environment using ModelSim Intel FPGA Edition inside a Xubu
    <img src="images/setup_steps_3.png" width="600">
    
 4. Inside the VM, install ModelSim.
-   <img src="images/setup_steps_4.png" width="600">
    
 5. Verify installation by launching ModelSim with `vsim` inside the VM.
    - The GUI should open showing the console and waveform viewer without errors.
-   <img src="images/setup_steps_5.png" width="600">
 
 **Next**: Read the [Installation Steps.](https://github.com/preeti-chauhan/hwe-modelsim-xubuntu-macos/blob/main/01-Installation-Steps.md)
