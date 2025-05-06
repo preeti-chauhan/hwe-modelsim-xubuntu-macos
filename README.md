@@ -43,7 +43,7 @@ Before installing ModelSim, update the package manager and install essential dev
 
 ---
 
-1. Update and Upgrade System Packages
+1. Update and Upgrade System Packages:
 
 Open a terminal and run:
 
@@ -55,7 +55,7 @@ This ensures your package lists and system software are current.
 
 ---
 
-2. Install Required Dependencies
+2. Install Required Dependencies:
 
 ModelSim requires several runtime libraries and developer tools to run smoothly on Linux. Install them with:
 
@@ -217,7 +217,7 @@ from anywhere in the terminal.
 
 ---
 
-✅ ModelSim is now ready to simulate your Verilog designs!
+✅ ModelSim is now ready to simulate Verilog designs!
 
 
 ## Note: 
