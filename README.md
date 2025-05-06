@@ -160,7 +160,76 @@ Confirm:
 ```bash
 df -h
 ```
+---
 
+## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
+
+If you're stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), you'll encounter limited disk space and installation errors.
+
+This guide helps you **boot into the actual installed Xubuntu system** on your virtual disk.
+
+---
+
+### Problem Symptoms
+
+- `df -h` shows `/cow` and `/cdrom` as full
+- You get errors like:
+  ```
+  No space left on device
+  E: Sub-process /usr/bin/dpkg returned an error code (1)
+  ```
+- You are not booting from `/dev/sda1` or your installed filesystem
+
+---
+
+### Fix It: Boot from the Installed Xubuntu System
+
+**1. Shut Down the VM**
+
+- Open UTM
+- Click the **⏹️ Stop** button (or choose `Actions → Force Stop`)
+
+---
+
+**2. Remove the Xubuntu ISO**
+
+- In UTM, click **Edit** on your VM
+- Go to the **Drives** section
+- Look for the attached **`xubuntu-22.04-desktop-amd64.iso`**
+- Uncheck or remove it
+
+---
+
+**3. Restart the VM**
+
+- Start the VM again from UTM
+- It should now boot from your installed Xubuntu system on disk
+
+---
+
+### Verify You’re in the Real System
+
+Run:
+
+```bash
+df -h
+```
+
+✅ You should see something like:
+
+```
+/dev/sda1        64G    4G   58G  7% /
+```
+
+No `/cow`, no `/cdrom`.
+
+---
+
+You're now in the **fully installed environment** and ready to proceed with:
+
+- Installing ModelSim
+- Running updates and simulation scripts
+  
 ---
 
 ### Step 2: Download and Install ModelSim
