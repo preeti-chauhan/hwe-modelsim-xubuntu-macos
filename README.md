@@ -78,16 +78,16 @@ E: Sub-process /usr/bin/dpkg returned an error code (2)
 
 Follow these steps to fix it:
 
-1. Edit the source list:
+**1. Edit the source list:**
    ```bash
    sudo nano /etc/apt/sources.list
    ```
 
-2. Comment out the line starting with `deb cdrom:[...]` by adding a `#`
+**2. Comment out the line starting with:** `deb cdrom:[...]` by adding a `#`
 
-3. Save and exit (`Ctrl + O`, Enter, then `Ctrl + X`)
+**3. Save and exit:** (`Ctrl + O`, Enter, then `Ctrl + X`)
 
-4. Run:
+**4. Run:**
    ```bash
    sudo dpkg --configure -a
    sudo apt clean
