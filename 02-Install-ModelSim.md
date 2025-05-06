@@ -1,5 +1,9 @@
 ### Step 2: Download and Install ModelSim
 
+## Reference: ModelSim Installation Guides
+
+
+
 **Optional: Install Firefox**
 
 Run the following commands:
@@ -33,7 +37,7 @@ From within your **Xubuntu VM**, open Firefox and go to:
 Then:
 
 - Select **ModelSim – Intel FPGA Edition (Linux)**
-- Choose the latest **Lite** or **Standard** version (Lite is free for non-commercial use)
+- Choose **Standard** version
 - Save the `.run` file to your `Downloads` folder  
   (e.g., `ModelSimSetup-<version>.run`)
 
@@ -69,7 +73,7 @@ This avoids the GUI installer (which can be slow in UTM) and provides a simple t
 When prompted, install to:
 
 ```bash
-~/intelFPGA_lite/modelsim_ase/
+~/intelFPGA_std/modelsim_int/
 ```
 
 If the folder doesn’t exist, the installer will create it.
@@ -97,7 +101,7 @@ Once installed, launch ModelSim from its install directory.
 Open a terminal and run:
 
 ```bash
-cd ~/intelFPGA_lite/modelsim_ase/bin
+cd ~/intelFPGA_std/modelsim_int/bin
 ./vsim
 ```
 
@@ -122,7 +126,7 @@ This allows to load designs, run simulations, and print results in the terminal.
 To avoid typing the full path every time, optionally add ModelSim to the shell PATH:
 
 ```bash
-echo 'export PATH="$HOME/intelFPGA_lite/modelsim_ase/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/intelFPGA_std/modelsim_int/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
