@@ -82,7 +82,7 @@ from anywhere in the terminal.
     sudo apt update
     ```
     
-  - Install the missing dependencies ModelSim requires.
+  - Install the missing dependencies ModelSim requires. For example:
     ```bash
     sudo apt install libc6:i386 libx11-6:i386 libxft2:i386 libxext6:i386 libxtst6:i386 libglu1-mesa:i386 -y
     ```
