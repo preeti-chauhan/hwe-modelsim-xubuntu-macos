@@ -2,7 +2,7 @@
 ## Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
-- First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](#Optional-Fix-3:-Boot-from-Installed-Xubuntu-(Exit-Live-ISO-Session)), to ensure correct drive and avoid errors.
+- First Read: [Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)](#Optional-Fix-3), to ensure correct drive and avoid errors.
 
 ---
 
@@ -40,7 +40,9 @@ These libraries support GUI rendering, simulation timing, and system calls Model
 
 ## Troubleshooting
 
-### Optional Fix-1: `dpkg` Error After Fresh Xubuntu Install
+### Optional Fix-1: 
+
+**`dpkg` Error After Fresh Xubuntu Install**
 
 If you see:
 
@@ -68,7 +70,9 @@ Follow these steps to fix it:
    ```
 ---
 
-### Optional Fix-2: Broken Install or `dpkg` Errors in UTM VM
+### Optional Fix-2: 
+
+**Broken Install or `dpkg` Errors in UTM VM**
 
 In some UTM VM setups, you might encounter errors like:
 
@@ -124,7 +128,9 @@ df -h
 ```
 ---
 
-## Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
+## Optional Fix-3: 
+
+**Boot from Installed Xubuntu (Exit Live ISO Session)**
 
 If it is stuck in the Xubuntu Live ISO environment (the "Try Xubuntu" session), it will encounter limited disk space and installation errors.
 
