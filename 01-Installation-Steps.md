@@ -2,6 +2,7 @@
 ## Installation Steps
 
 Follow these instructions to set up **ModelSim Intel FPGA Edition** inside your Xubuntu VM.
+- First Read: Optional Fix-3: Boot from Installed Xubuntu (Exit Live ISO Session)
 
 ---
 
