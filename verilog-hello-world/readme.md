@@ -17,9 +17,7 @@ run -all
 ## Recall: Verify Running with ModelSim
 (in virtual machine)
 
-<img src="images/wf_rem_1.png" width="600">
-<img src="images/wf_rem_2.png" width="600">
-<img src="images/wf_rem_3.png" width="600">
+
 <img src="images/wf_rem_4.png" width="600">
 <img src="images/wf_rem_5.png" width="600">
 <img src="images/wf_rem_6.png" width="600">
